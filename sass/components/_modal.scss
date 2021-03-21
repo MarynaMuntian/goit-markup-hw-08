@@ -1,0 +1,216 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--backdrop-color);
+  transform: scaleY(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scaleY(0);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: flex-end;
+  width: 528px;
+  z-index: 100;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--grey-modal-color);
+  border-radius: 50%;
+  background-color: var(--white-color);
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.modal__box {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input {
+  &:focus-within .modal__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.modal__input {
+  &:focus-within .modal__field {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.modal__input {
+  &:focus-within .modal__textarea {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.modal__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal__name {
+  padding-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--link-color);
+}
+
+.modal__field {
+  padding: 11px 12px 11px 42px;
+  border: 1px solid var(--grey-input-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__icon {
+  position: absolute;
+  left: 12px;
+  top: 29px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__item.comment {
+  margin-bottom: 20px;
+}
+
+.modal__textarea {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  border: 1px solid var(--grey-input-color);
+  border-radius: 4px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: var(--grey-placeholder-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.modal__checkbox {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+}
+
+.modal__checkbox-field {
+  appearance: none;
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .modal__checkbox-icon {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+}
+
+.modal__checkbox-icon {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 2px;
+}
+
+.modal__checkbox-link {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.modal__btn-send {
+  width: 200px;
+  padding: 10px 55px 10px 56px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
