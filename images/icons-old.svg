@@ -1,8 +1,5 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
     <defs>
-        <symbol id="icon-menu-open" viewBox="0 0 32 32">
-            <path d="M6.4 11.734V9.6h19.2v2.134H6.4zm0 5.332h19.2v-2.133H6.4v2.133zm0 5.334h19.2v-2.134H6.4V22.4z" />
-        </symbol>
         <symbol id="icon-send" viewBox="0 0 32 32">
             <path fill="var(--color1, #fff)"
                 d="M32 0L0 18l10.227 3.787L26 7 14.003 23.187l.009.003-.012-.003V32l5.735-6.691L27.002 28l4.999-28z" />
