@@ -20,9 +20,24 @@
   color: var(--white-color);
 }
 
-.footer__contacts-item {
-  display: block;
+.footer__address-text {
+  margin: 0;
+}
+
+.footer__contacts {
   margin-top: 9px;
+}
+
+.footer__contacts-item {
+  margin-top: 9px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.footer__contacts-link {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -58,7 +73,7 @@
   }
 }
 
-.join-us__icon {
+.join-us__link {
   display: flex;
   align-items: center;
   justify-content: center;
