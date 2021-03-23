@@ -574,6 +574,10 @@ ul {
   .hero__btn {
     cursor: pointer;
   }
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 
 .benefits {
