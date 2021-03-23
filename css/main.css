@@ -1336,6 +1336,12 @@ ul {
 }
 
 @media (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
+  .filters__btn {
+    cursor: pointer;
+  }
   .portfolio-gallery__item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
