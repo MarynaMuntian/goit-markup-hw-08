@@ -89,7 +89,6 @@
   }
 
   .header-contacts__list {
-    // display: flex;
     margin-left: 84px;
 
     &:last-of-type {
@@ -129,5 +128,25 @@
     margin-right: 10px;
     margin-top: auto;
     margin-bottom: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-contacts__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 305px;
+  }
+
+  .header-contacts__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 30px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

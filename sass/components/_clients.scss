@@ -1,8 +1,6 @@
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
 }
 
 .clients__title {
@@ -59,5 +57,25 @@
 
   .clients__link {
     width: 226px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .clients__item {
+    flex-basis: calc(100% / 6 - 15px);
+  }
+
+  .clients__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .clients__link {
+    width: 170px;
   }
 }

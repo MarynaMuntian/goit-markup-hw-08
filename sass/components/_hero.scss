@@ -65,3 +65,9 @@
     background-color: var(--secondary-white-color);
   }
 }
+
+@media (min-width: 1200px) {
+  .hero__btn {
+    cursor: pointer;
+  }
+}
