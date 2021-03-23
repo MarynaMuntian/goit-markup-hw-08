@@ -5,6 +5,15 @@
 .header__btn {
   background-color: transparent;
   border: none;
+
+  &:focus-within .header__btn-icon {
+    fill: var(--accent-color);
+  }
+
+  &:hover .header__btn-icon,
+  &:focus .header__btn-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .header-content {

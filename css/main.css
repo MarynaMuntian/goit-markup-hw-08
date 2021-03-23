@@ -356,6 +356,15 @@ ul {
   border: none;
 }
 
+.header__btn:focus-within .header__btn-icon {
+  fill: var(--accent-color);
+}
+
+.header__btn:hover .header__btn-icon,
+.header__btn:focus .header__btn-icon {
+  fill: var(--accent-color);
+}
+
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
