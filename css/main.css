@@ -1328,6 +1328,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
   }
   .portfolio-gallery__text {
     -webkit-box-flex: 1;
@@ -1349,6 +1350,9 @@ ul {
   .portfolio-gallery__item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
+  }
+  .portfolio-gallery__descr {
+    padding: 63px 24px;
   }
 }
 
