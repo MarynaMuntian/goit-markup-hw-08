@@ -51,3 +51,13 @@
     fill: var(--accent-color);
   }
 }
+
+@media (min-width: 480px) {
+  .clients__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  .clients__link {
+    width: 226px;
+  }
+}
