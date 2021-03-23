@@ -170,3 +170,9 @@
     padding: 49px 24px;
   }
 }
+
+@media (min-width: 1200px) {
+  .portfolio-gallery__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}

@@ -121,7 +121,6 @@
   padding: 11px 12px 11px 42px;
   border: 1px solid var(--grey-input-color);
   border-radius: 4px;
-  // cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -216,5 +215,18 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  // cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+
+  .modal__field {
+    cursor: pointer;
+  }
+
+  .modal__btn-send {
+    cursor: pointer;
+  }
 }

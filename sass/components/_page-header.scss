@@ -132,6 +132,10 @@
 }
 
 @media (min-width: 1200px) {
+  .header-content {
+    padding: 0 15px;
+  }
+
   .header-contacts__list {
     display: flex;
     justify-content: space-between;
