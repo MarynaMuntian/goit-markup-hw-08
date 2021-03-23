@@ -1330,6 +1330,9 @@ ul {
             flex-direction: column;
     height: 100%;
   }
+  .portfolio-gallery__thumb {
+    max-width: 370px;
+  }
   .portfolio-gallery__text {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;

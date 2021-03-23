@@ -152,6 +152,10 @@
     height: 100%;
   }
 
+  .portfolio-gallery__thumb {
+    max-width: 370px;
+  }
+
   .portfolio-gallery__text {
     flex-grow: 1;
   }
