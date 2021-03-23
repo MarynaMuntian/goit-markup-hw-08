@@ -23,7 +23,8 @@
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: flex-end;
-  width: 528px;
+  width: 450px;
+  height: 609px;
   z-index: 100;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -120,7 +121,7 @@
   padding: 11px 12px 11px 42px;
   border: 1px solid var(--grey-input-color);
   border-radius: 4px;
-  cursor: pointer;
+  // cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -155,8 +156,8 @@
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--link-color);
 }
@@ -189,7 +190,7 @@
   display: inline-block;
   margin-right: 8px;
   vertical-align: middle;
-  width: 15px;
+  width: 16px;
   height: 15px;
   border: 2px solid var(--primary-color);
   border-radius: 2px;
@@ -215,5 +216,5 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
+  // cursor: pointer;
 }
