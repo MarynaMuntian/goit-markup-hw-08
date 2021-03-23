@@ -1103,6 +1103,14 @@ ul {
   color: var(--link-color);
 }
 
+@media (min-width: 480px) {
+  .filters__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
