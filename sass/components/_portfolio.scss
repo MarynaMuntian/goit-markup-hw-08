@@ -113,7 +113,7 @@
   padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.556;
   letter-spacing: 0.03em;
 }
 
@@ -141,7 +141,7 @@
   color: var(--link-color);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .filters__list {
     justify-content: center;
   }
@@ -164,5 +164,9 @@
 
   .portfolio-gallery__text {
     flex-grow: 1;
+  }
+
+  .portfolio-gallery__descr {
+    padding: 49px 24px;
   }
 }
