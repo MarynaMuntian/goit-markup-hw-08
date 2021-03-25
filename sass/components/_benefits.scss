@@ -2,6 +2,14 @@
   padding: 60px 0;
 }
 
+.benefits__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .benefits__img {
   display: block;
   text-align: center;

@@ -584,6 +584,14 @@ ul {
   padding: 60px 0;
 }
 
+.benefits__item {
+  margin-bottom: 30px;
+}
+
+.benefits__item:last-child {
+  margin-bottom: 0;
+}
+
 .benefits__img {
   display: block;
   text-align: center;
@@ -1717,6 +1725,10 @@ ul {
 }
 
 .mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu__link.current {
   color: var(--accent-color);
 }
 

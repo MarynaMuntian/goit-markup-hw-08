@@ -63,6 +63,10 @@
   }
 }
 
+.mobile-menu__link.current {
+  color: var(--accent-color);
+}
+
 .mobile-contacts__list {
   margin-bottom: 64px;
 }
