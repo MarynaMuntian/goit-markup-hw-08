@@ -1,4 +1,6 @@
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   overflow-y: scroll;
   top: 0;
@@ -37,8 +39,8 @@
   }
 }
 
-.mobile-menu__list {
-  margin-bottom: 302px;
+.mobile-menu__nav {
+  flex-grow: 1;
 }
 
 .mobile-menu__item {
