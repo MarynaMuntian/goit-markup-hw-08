@@ -46,12 +46,12 @@
   .benefits__list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px 0 0 -30px;
+    margin: -30px 0 0 -60px;
   }
 
   .benefits__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px 0 0 15px;
+    margin: 30px 0 0 30px;
   }
 
   .benefits__img {
