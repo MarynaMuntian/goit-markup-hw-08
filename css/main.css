@@ -387,6 +387,9 @@ ul {
   .header__btn {
     display: none;
   }
+  .header-content {
+    padding: 0;
+  }
   .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
